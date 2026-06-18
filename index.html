@@ -107,20 +107,20 @@
     <script>
         // Raw Itinerary Data from the sheet
         const itineraryData = [
-            { id: 1, type: "flight", item: "✈️ 機票", depTime: "2026/06/27 19:40", arrTime: "2026/06/27 22:50", depLoc: "香港 (HKG)", arrLoc: "多哈 (DOH)", detail: "卡塔爾航空 QR 817", code: "93UEV9" },
-            { id: 2, type: "flight", item: "✈️ 機票", depTime: "2026/06/28 02:00", arrTime: "2026/06/28 07:25", depLoc: "多哈 (DOH)", arrLoc: "哥本哈根 (CPH)", detail: "卡塔爾航空 QR 161", code: "93UEV9" },
-            { id: 3, type: "flight", item: "✈️ 機票", depTime: "2026/06/29 12:25", arrTime: "2026/06/29 13:40", depLoc: "哥本哈根 (CPH)", arrLoc: "法羅群島 (FAE)", detail: "大西洋航空 RC 453", code: "XGKZ48" },
-            { id: 4, type: "transport", item: "🚗 租車取車", depTime: "2026/06/29 14:00", arrTime: "-", depLoc: "瓦加爾機場 (FAE)", arrLoc: "--", detail: "Rent Your Car / 中型 SUV", code: "#41082" },
-            { id: 5, type: "activity", item: "⛵ 船遊健行", depTime: "2026/07/01 11:00", arrTime: "2026/07/01 13:00", depLoc: "Sørvágur 碼頭", arrLoc: "Sørvágur 碼頭", detail: "Drangarnir 海上拱門導覽健行", code: "#129672" },
-            { id: 6, type: "transport", item: "🚗 租車還車", depTime: "2026/07/06 14:00", arrTime: "-", depLoc: "瓦加爾機場 (FAE)", arrLoc: "--", detail: "歸還車輛 (含海底隧道通行證)", code: "#41082" },
-            { id: 7, type: "flight", item: "✈️ 機票", depTime: "2026/07/06 14:30", arrTime: "2026/07/06 17:35", depLoc: "法羅群島 (FAE)", arrLoc: "哥本哈根 (CPH)", detail: "大西洋航空 RC 456", code: "XGKZ48" },
-            { id: 8, type: "flight", item: "✈️ 機票", depTime: "2026/07/09 14:20", arrTime: "2026/07/09 15:30", depLoc: "哥本哈根 (CPH)", arrLoc: "奧斯陸 (OSL)", detail: "北歐挪威航空 D8 3228", code: "ZKYX9V" },
-            { id: 9, type: "transport", item: "🚄 火車一程", depTime: "2026/07/10 08:23", arrTime: "2026/07/10 13:04", depLoc: "奧斯陸 (Oslo S)", arrLoc: "米達爾 (Myrdal)", detail: "挪威國鐵 Vy F4 (Flex 票)", code: "MEH-JQS-I2O" },
-            { id: 10, type: "transport", item: "🚄 火車二程", depTime: "2026/07/10 13:24", arrTime: "2026/07/10 14:22", depLoc: "米達爾 (Myrdal)", arrLoc: "弗洛姆 (Flåm)", detail: "Vy R45 (高山鐵路)", code: "KHL-6XI-Y7R" },
-            { id: 11, type: "transport", item: "🚢 渡輪船票", depTime: "2026/07/10 15:30", arrTime: "2026/07/10 20:45", depLoc: "弗洛姆 (Flåm)", arrLoc: "卑爾根 (Bergen)", detail: "Norled 營運 (航程 5小時15分)", code: "DFP195202131" },
-            { id: 12, type: "flight", item: "✈️ 機票", depTime: "2026/07/12 17:55", arrTime: "2026/07/12 19:15", depLoc: "卑爾根 (BGO)", arrLoc: "斯德哥爾摩 (ARN)", detail: "北歐挪威航空 DY 842", code: "ZRFYEH" },
+            { id: 1, type: "flight", item: "✈️ 機票", depTime: "2026/06/27 19:40", arrTime: "2026/06/27 22:50", depLoc: "香港 (HKG)", arrLoc: "多哈 (DOH)", detail: "卡塔爾航空 QR 817", code: "9****9" },
+            { id: 2, type: "flight", item: "✈️ 機票", depTime: "2026/06/28 02:00", arrTime: "2026/06/28 07:25", depLoc: "多哈 (DOH)", arrLoc: "哥本哈根 (CPH)", detail: "卡塔爾航空 QR 161", code: "9****9" },
+            { id: 3, type: "flight", item: "✈️ 機票", depTime: "2026/06/29 12:25", arrTime: "2026/06/29 13:40", depLoc: "哥本哈根 (CPH)", arrLoc: "法羅群島 (FAE)", detail: "大西洋航空 RC 453", code: "X****8" },
+            { id: 4, type: "transport", item: "🚗 租車取車", depTime: "2026/06/29 14:00", arrTime: "-", depLoc: "瓦加爾機場 (FAE)", arrLoc: "--", detail: "Rent Your Car / 中型 SUV", code: "#4**82" },
+            { id: 5, type: "activity", item: "⛵ 船遊健行", depTime: "2026/07/01 11:00", arrTime: "2026/07/01 13:00", depLoc: "Sørvágur 碼頭", arrLoc: "Sørvágur 碼頭", detail: "Drangarnir 海上拱門導覽健行", code: "#12**72" },
+            { id: 6, type: "transport", item: "🚗 租車還車", depTime: "2026/07/06 14:00", arrTime: "-", depLoc: "瓦加爾機場 (FAE)", arrLoc: "--", detail: "歸還車輛 (含海底隧道通行證)", code: "#4**82" },
+            { id: 7, type: "flight", item: "✈️ 機票", depTime: "2026/07/06 14:30", arrTime: "2026/07/06 17:35", depLoc: "法羅群島 (FAE)", arrLoc: "哥本哈根 (CPH)", detail: "大西洋航空 RC 456", code: "X****8" },
+            { id: 8, type: "flight", item: "✈️ 機票", depTime: "2026/07/09 14:20", arrTime: "2026/07/09 15:30", depLoc: "哥本哈根 (CPH)", arrLoc: "奧斯陸 (OSL)", detail: "北歐挪威航空 D8 3228", code: "Z****V" },
+            { id: 9, type: "transport", item: "🚄 火車一程", depTime: "2026/07/10 08:23", arrTime: "2026/07/10 13:04", depLoc: "奧斯陸 (Oslo S)", arrLoc: "米達爾 (Myrdal)", detail: "挪威國鐵 Vy F4 (Flex 票)", code: "MEH-***-I2O" },
+            { id: 10, type: "transport", item: "🚄 火車二程", depTime: "2026/07/10 13:24", arrTime: "2026/07/10 14:22", depLoc: "米達爾 (Myrdal)", arrLoc: "弗洛姆 (Flåm)", detail: "Vy R45 (高山鐵路)", code: "KHL-***-Y7R" },
+            { id: 11, type: "transport", item: "🚢 渡輪船票", depTime: "2026/07/10 15:30", arrTime: "2026/07/10 20:45", depLoc: "弗洛姆 (Flåm)", arrLoc: "卑爾根 (Bergen)", detail: "Norled 營運 (航程 5小時15分)", code: "DFP1****2131" },
+            { id: 12, type: "flight", item: "✈️ 機票", depTime: "2026/07/12 17:55", arrTime: "2026/07/12 19:15", depLoc: "卑爾根 (BGO)", arrLoc: "斯德哥爾摩 (ARN)", detail: "北歐挪威航空 DY 842", code: "Z****H" },
             { id: 13, type: "transport", item: "🚄 火車快捷", depTime: "2026/07/13 10:00", arrTime: "-", depLoc: "斯德哥爾摩 (ARN)", arrLoc: "--", detail: "Arlanda Express (雙人票)", code: "N/A" },
-            { id: 14, type: "flight", item: "✈️ 機票", depTime: "2026/07/16 13:50", arrTime: "2026/07/17 05:50", depLoc: "斯德哥爾摩 (ARN)", arrLoc: "曼谷 (BKK)", detail: "泰國航空 TG 961 (跨日)", code: "EUMW8K" }
+            { id: 14, type: "flight", item: "✈️ 機票", depTime: "2026/07/16 13:50", arrTime: "2026/07/17 05:50", depLoc: "斯德哥爾摩 (ARN)", arrLoc: "曼谷 (BKK)", detail: "泰國航空 TG 961 (跨日)", code: "E****K" }
         ];
 
         let currentFilter = 'all';
